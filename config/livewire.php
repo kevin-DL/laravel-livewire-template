@@ -42,6 +42,18 @@ return [
 
     /*
     |---------------------------------------------------------------------------
+    | Lazy Loading Placeholder
+    |---------------------------------------------------------------------------
+    | Livewire allows you to lazy load components that would otherwise slow down
+    | the initial page load. Every component can have a custom placeholder or
+    | you can define the default placeholder view for all components below.
+    |
+    */
+
+    'lazy_placeholder' => null,
+
+    /*
+    |---------------------------------------------------------------------------
     | Temporary File Uploads
     |---------------------------------------------------------------------------
     |
@@ -130,4 +142,17 @@ return [
     */
 
     'inject_morph_markers' => true,
+
+    /*
+    |---------------------------------------------------------------------------
+    | Pagination Theme
+    |---------------------------------------------------------------------------
+    |
+    | When enabling Livewire's pagination feature by using the `WithPagination`
+    | trait, Livewire will use Tailwind templates to render pagination views
+    | on the page. If you want Bootstrap CSS, you can specify: "bootstrap"
+    |
+    */
+
+    'pagination_theme' => 'tailwind',
 ];
